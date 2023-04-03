@@ -1,15 +1,15 @@
-import { Injectable } from '@nestjs/common';
+import { Inject, Injectable } from '@nestjs/common';
 import { CreateCountryDto } from './dto/create-country.dto';
 import { UpdateCountryDto } from './dto/update-country.dto';
 import {
   CountriesRepository,
-  InjectCountriesRepository,
+  COUNTRIES_REPOSITORY_TOKEN,
 } from './repositories/countries.repository.interface';
 
 @Injectable()
 export class CountriesService {
   constructor(
-    @InjectCountriesRepository()
+    @Inject(COUNTRIES_REPOSITORY_TOKEN)
     private countriesRepository: CountriesRepository,
   ) {}
 

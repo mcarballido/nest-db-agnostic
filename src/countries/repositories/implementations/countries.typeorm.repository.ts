@@ -1,4 +1,4 @@
-import { Country } from 'src/countries/models/country.model';
+import { Country } from '../../models/country.model';
 import { CountriesRepository } from '../countries.repository.interface';
 import { Repository } from 'typeorm';
 

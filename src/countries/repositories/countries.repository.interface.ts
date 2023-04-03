@@ -1,4 +1,3 @@
-import { Inject } from '@nestjs/common';
 import { Country } from '../entities/country.entity';
 
 export interface CountriesRepository {
@@ -7,6 +6,3 @@ export interface CountriesRepository {
 }
 
 export const COUNTRIES_REPOSITORY_TOKEN = 'countries-repository-token';
-
-export const InjectCountriesRepository = () =>
-  Inject(COUNTRIES_REPOSITORY_TOKEN);

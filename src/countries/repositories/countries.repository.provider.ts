@@ -1,7 +1,7 @@
 import { Injectable, Provider } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { InjectRepository } from '@nestjs/typeorm';
-import { DataSource } from 'src/data/constants';
+import { DataSource } from '../../data/constants';
 import { Repository } from 'typeorm';
 import { Country } from '../models/country.model';
 import { COUNTRIES_REPOSITORY_TOKEN } from './countries.repository.interface';

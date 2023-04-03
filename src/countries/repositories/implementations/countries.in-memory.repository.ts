@@ -1,4 +1,4 @@
-import { Country } from 'src/countries/entities/country.entity';
+import { Country } from '../../entities/country.entity';
 import { CountriesRepository } from '../countries.repository.interface';
 
 export class CountriesInMemoryRepository implements CountriesRepository {
